@@ -1,10 +1,12 @@
 package main;
 
 import account.AccountService;
+import account.Logger;
 import account.TransferService;
 
 public class Main {
     public static void main(String[] args) {
+        Logger logger = Logger.getInstance();
         AccountService accountService = new AccountService();
         TransferService transferService = new TransferService();
 
